@@ -1,0 +1,163 @@
+{
+	"info": {
+		"_postman_id": "80ee106a-c842-4a6e-9113-61b508e62a30",
+		"name": "New Collection",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "3896576"
+	},
+	"item": [
+		{
+			"name": "http://localhost:8080/gifts",
+			"request": {
+				"method": "PATCH",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"code\":\"5\",\n    \"phoneNumber\":\"09135763104\"\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/gifts",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"gifts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8080/gifts",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"code\":\"5\",\n    \"maxUse\":1000,\n    \"amount\":1000000\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/gifts",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"gifts"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8081//wallet/09135763103",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"code\":\"123\",\n    \"maxUse\":1,\n    \"amount\":1000\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/wallets/09135763001",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"wallets",
+						"09135763001"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8081/gifts/1",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"code\":\"123\",\n    \"maxUse\":1,\n    \"amount\":1000\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8080/gifts/5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8080",
+					"path": [
+						"gifts",
+						"5"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "http://localhost:8081/wallets/getPhoneNumbers/1",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"code\":\"123\",\n    \"maxUse\":1,\n    \"amount\":1000\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8081/wallets/getPhoneNumbers/5",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8081",
+					"path": [
+						"wallets",
+						"getPhoneNumbers",
+						"5"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
